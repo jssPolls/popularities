@@ -12,6 +12,7 @@ root: {
     background: 'url('+ bgImgUrl + ') noRepeat center center fixed',
     backgroundSize: 'cover',
 }
+};
 var sectionStyle = {
   width: "100%",
   height: "130%",
