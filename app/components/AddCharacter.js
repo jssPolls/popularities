@@ -29,6 +29,7 @@ class AddCharacter extends React.Component {
     var year = this.state.year;
     var branch = this.state.branch;
     var url = this.state.url;
+    var rating = 10;
 
 
 
