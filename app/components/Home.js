@@ -3,6 +3,14 @@ import {Link} from 'react-router';
 import HomeStore from '../stores/HomeStore'
 import HomeActions from '../actions/HomeActions';
 import {first, without, findWhere} from 'underscore';
+const bgImgUrl = "https://raw.githubusercontent.com/jssPolls/popularities/master/home.jpg"
+
+
+var sectionStyle = {
+  width: "100%",
+  height: "400px",
+  backgroundImage: 'url(' + bgImgUrl + ')'
+};
 
 class Home extends React.Component {
   constructor(props) {
@@ -31,11 +39,7 @@ class Home extends React.Component {
   }
 
   render() {
-      
-      const bgImgUrl = "https://raw.githubusercontent.com/jssPolls/popularities/master/home.jpg"
-        const background = {
-    backgroundImage: 'url(' + bgImgUrl + ')'
-        }
+
     
     var characterNodes = this.state.characters.map((character, index) => {
       return (
@@ -57,7 +61,7 @@ class Home extends React.Component {
     });
 
     return (
-      <div className='container' style={background}>
+      <div className='container' style={ sectionStyle }>
         <h3 className='text-center'>Who do you think should be Mr. or Ms. Zealicon 2017?</h3>
         <div className='row'>
           {characterNodes}
