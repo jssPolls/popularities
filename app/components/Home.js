@@ -31,6 +31,12 @@ class Home extends React.Component {
   }
 
   render() {
+      
+      const bgImgUrl = "https://raw.githubusercontent.com/kshitj9/votes/master/public/img/amarr_bg.jpg"
+        const background = {
+    backgroundImage: 'url(' + bgImgUrl + ')'
+  
+    
     var characterNodes = this.state.characters.map((character, index) => {
       return (
         <div key={character.characterId} className={index === 0 ? 'col-xs-6 col-sm-6 col-md-5 col-md-offset-1' : 'col-xs-6 col-sm-6 col-md-5'}>
