@@ -39,7 +39,7 @@ class Home extends React.Component {
     
     var characterNodes = this.state.characters.map((character, index) => {
       return (
-        <div key={character.characterId}  style={background} className={index === 0 ? 'col-xs-6 col-sm-6 col-md-5 col-md-offset-1' : 'col-xs-6 col-sm-6 col-md-5'}>
+        <div key={character.characterId} className={index === 0 ? 'col-xs-6 col-sm-6 col-md-5 col-md-offset-1' : 'col-xs-6 col-sm-6 col-md-5'}>
           <div className='thumbnail fadeInUp animated'>
             <img onClick={this.handleClick.bind(this, character)} src={character.url}/>
             <div className='caption text-center'>
@@ -57,8 +57,8 @@ class Home extends React.Component {
     });
 
     return (
-      <div className='container'>
-        <h3 className='text-center'>Who do you think should get maximum number of proposes today?</h3>
+      <div className='container' style={background}>
+        <h3 className='text-center'>Who do you think should be Mr. or Ms. Zealicon 2017?</h3>
         <div className='row'>
           {characterNodes}
         </div>
