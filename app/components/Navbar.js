@@ -126,7 +126,7 @@ class Navbar extends React.Component {
               </ul>
 
             </li>
-                   <li><Link to='/AddAnother'>Add Another</Link></li>
+                   <li><Link to='/characters'>Add Another</Link></li>
 
           </ul>
         </div>
