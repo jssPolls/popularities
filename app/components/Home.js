@@ -32,7 +32,7 @@ class Home extends React.Component {
 
   render() {
       
-      const bgImgUrl = "https://raw.githubusercontent.com/kshitj9/votes/master/public/img/amarr_bg.jpg"
+      const bgImgUrl = "https://raw.githubusercontent.com/jssPolls/popularities/master/home.jpg"
         const background = {
     backgroundImage: 'url(' + bgImgUrl + ')'
   
