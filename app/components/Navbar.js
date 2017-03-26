@@ -124,7 +124,7 @@ class Navbar extends React.Component {
                 <li><Link to='/male'>All</Link></li>
                                  
               </ul>
-            <li><Link to='/addAnother'>Add Another</Link></li>
+            <li><Link to='/AddAnother'>Add Another</Link></li>
 
             </li>
        
