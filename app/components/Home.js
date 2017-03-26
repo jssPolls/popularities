@@ -16,7 +16,8 @@ root: {
 var sectionStyle = {
   width: "100%",
   height: "130%",
-  backgroundImage: 'url(' + bgImgUrl + ')'
+  backgroundImage: 'url(' + bgImgUrl + ')noRepeat center center fixed',
+  backgroundSize: 'cover'
 };
 
 class Home extends React.Component {
@@ -68,7 +69,7 @@ class Home extends React.Component {
     });
 
     return (
-      <div className='container' style={ styles }>
+      <div className='container' style={ sectionStyle }>
         <h3 className='text-center'>Who do you think should be Mr. or Ms. Zealicon 2017?</h3>
         <div className='row'>
           {characterNodes}
