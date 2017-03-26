@@ -333,6 +333,7 @@ app.post('/api/characters', function(req, res, next) {
   var characterYear = req.body.year;
   var characterBranch = req.body.branch;
   var characterUrl = req.body.url;
+  var rating = 10;
   var characterIdLookupUrl = 'https://api.eveonline.com/eve/CharacterID.xml.aspx?names=' + characterName;
 
   var parser = new xml2js.Parser();
@@ -378,6 +379,7 @@ app.post('/api/characters', function(req, res, next) {
               branch: branch,
               url: url,
               gender: gender,
+              rating:10,
               random: [Math.random(), 0]
             });
 
