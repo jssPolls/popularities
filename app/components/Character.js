@@ -41,13 +41,13 @@ class Character extends React.Component {
   }
 
   render() {
-      const bgImgUrl = "https://raw.githubusercontent.com/kshitj9/votes/master/public/img/amarr_bg.jpg"
-        const background = {
-    backgroundImage: 'url(' + bgImgUrl + ')'
-  }
+//       const bgImgUrl = "https://raw.githubusercontent.com/kshitj9/votes/master/public/img/amarr_bg.jpg"
+//         const background = {
+//     backgroundImage: 'url(' + bgImgUrl + ')'
+//   }
 
     return (
-          <div className='container' style={background}>
+          <div className='container'>
        <div className='profile-img'>
         <div className='profile-stats clearfix'>
           <a ref='magnificPopup' className='magnific-popup' href={this.state.url}>
