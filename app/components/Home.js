@@ -35,7 +35,7 @@ class Home extends React.Component {
       const bgImgUrl = "https://raw.githubusercontent.com/jssPolls/popularities/master/home.jpg"
         const background = {
     backgroundImage: 'url(' + bgImgUrl + ')'
-  
+        }
     
     var characterNodes = this.state.characters.map((character, index) => {
       return (
