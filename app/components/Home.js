@@ -5,7 +5,13 @@ import HomeActions from '../actions/HomeActions';
 import {first, without, findWhere} from 'underscore';
 const bgImgUrl = "https://raw.githubusercontent.com/jssPolls/popularities/master/home.jpg"
 
+let imgUrl = 'images/berlin.jpg'
+let styles = {
+root: {
 
+    background: 'url('+ bgImgUrl + ') noRepeat center center fixed',
+    backgroundSize: 'cover',
+}
 var sectionStyle = {
   width: "100%",
   height: "130%",
@@ -61,7 +67,7 @@ class Home extends React.Component {
     });
 
     return (
-      <div className='container' style={ sectionStyle }>
+      <div className='container' style={ styles }>
         <h3 className='text-center'>Who do you think should be Mr. or Ms. Zealicon 2017?</h3>
         <div className='row'>
           {characterNodes}
