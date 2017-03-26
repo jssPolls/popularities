@@ -20,7 +20,7 @@ class AddCharacterActions {
     $.ajax({
       type: 'POST',
       url: '/api/characters',
-      data: { name: name, gender: gender, year: year, branch: branch, url }
+      data: { name: name, gender: gender, year: year, branch: branch,rating: 10, url }
     })
       .done((data) => {
         this.actions.addCharacterSuccess(data.message);
