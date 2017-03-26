@@ -16,7 +16,7 @@ root: {
 var sectionStyle = {
   width: "100%",
   height: "130%",
-  backgroundImage: 'url(' + bgImgUrl + ')',
+  backgroundImage: 'url(' + bgImgUrl + ') noRepeat center center fixed',
   backgroundSize: 'cover'
 };
 
