@@ -8,7 +8,7 @@ const bgImgUrl = "https://raw.githubusercontent.com/jssPolls/popularities/master
 
 var sectionStyle = {
   width: "100%",
-  height: "400px",
+  height: "100%",
   backgroundImage: 'url(' + bgImgUrl + ')'
 };
 
