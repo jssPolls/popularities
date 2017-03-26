@@ -90,7 +90,10 @@ class Navbar extends React.Component {
           </form>
           <ul className='nav navbar-nav'>
             <li><Link to='/'>Home</Link></li>
+              
             <li><Link to='/stats'>Stats</Link></li>
+            <li><Link to='/characters'>Add Another</Link></li>
+
             <li className='dropdown'>
               <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Standings <span className='caret'></span></a>
               <ul className='dropdown-menu'>
@@ -126,7 +129,6 @@ class Navbar extends React.Component {
               </ul>
 
             </li>
-                   <li><Link to='/characters'>Add Another</Link></li>
 
           </ul>
         </div>
