@@ -212,12 +212,13 @@ app.put('/api/characters', function(req, res, next) {
           var dif = 0;
           var det = winner.rating/400;
           var de = loser.rating/400;
-          var r1 = Math.pow(10, det);
-          var r2 = Math.pow(10, de);
-          var e1 = r1/(r1+r2);
-          var e2 = r2(r1+r2);
-          winner.rating = winner.rating + (2*(1-e1));
-          loser.rating = loser.rating - (2*e2);
+          var ra = Math.pow(10, det);
+          var rb = Math.pow(10, de);
+          var rc = ra + rb ;
+          var ea = ra/rc;
+          var eb = rb/rc;
+          winner.rating = winner.rating + (2*(1-ea));
+          loser.rating = loser.rating - (2*eb);
           winner.voted = true;
           winner.random = [Math.random(), 0];
           winner.save(function(err) {
