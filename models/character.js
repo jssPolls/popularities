@@ -8,7 +8,7 @@ var characterSchema = new mongoose.Schema({
   branch: String,
   year: String,
   url: String,
-  rating: String,
+  rating: Number,
   bloodline: String,
   wins: { type: Number, default: 0 },
   losses: { type: Number, default: 0 },
