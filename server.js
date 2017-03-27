@@ -390,7 +390,7 @@ app.post('/api/characters', function(req, res, next) {
               branch: branch,
               url: url,
               gender: gender,
-              rating:10,
+              rating: rating,
               random: [Math.random(), 0]
             });
 
