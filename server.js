@@ -210,17 +210,14 @@ app.put('/api/characters', function(req, res, next) {
         function(callback) {
           winner.wins++;
           var dif = 0;
-          if(winner.rating>loser.rating){
-             dif = winner.rating - loser.rating;
-          }
-          else{
-             dif = winner.rating - loser.rating;
-          }
-          var det = dif/400;
-          var pow = Math.pow(10, det);
-          var den = pow+1;
-          var ex = 1/den;
-          winner.rating = winner.rating + (2*ex);
+          var det = winner.rating/400;
+          var de = loser.rating/400;
+          var r1 = Math.pow(10, det);
+          var r2 = Math.pow(10, de);
+          var e1 = r1/(r1+r2);
+          var e2 = r2(r1+r2);
+          winner.rating = winner.rating + (2*(1-e1));
+          loser.rating = loser.rating - (2*e2);
           winner.voted = true;
           winner.random = [Math.random(), 0];
           winner.save(function(err) {
