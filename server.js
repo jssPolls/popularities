@@ -278,8 +278,8 @@ app.get('/api/characters/top', function(req, res, next) {
       characters.sort(function(a, b) {
 //         if (a.wins / (a.wins + a.losses) < b.wins / (b.wins + b.losses)) { return 1; }
 //         if (a.wins / (a.wins + a.losses) > b.wins / (b.wins + b.losses)) { return -1; }
-        if (a.wins < b.wins) { return 1; }
-        if (a.wins > b.wins) { return -1;}
+        if (a.rating < b.rating) { return 1; }
+        if (a.rating > b.rating) { return -1;}
         return 0;
       });
 
