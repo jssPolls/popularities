@@ -209,6 +209,17 @@ app.put('/api/characters', function(req, res, next) {
       async.parallel([
         function(callback) {
           winner.wins++;
+          var dif = 0;
+          if(winner.rating>loser.rating){
+             dif = winner.rating - loser.rating;
+          }
+          else{
+             dif = winner.rating - loser.rating;
+          }
+          var pow = [Math.pow(10), dif];
+          var den = pow/400;
+          var ex = 1/(1+den);
+          winner.rating = winner.rating + (20*ex);
           winner.voted = true;
           winner.random = [Math.random(), 0];
           winner.save(function(err) {
