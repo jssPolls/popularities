@@ -49,7 +49,7 @@ class CharacterList extends React.Component {
               <br />
               <small>Branch: <strong>{character.branch}</strong></small>
               <br />
-              <small>Proposals: <strong>{character.wins}</strong> Rejections: <strong>{character.losses}</strong></small>
+              <small>Wins: <strong>{character.wins}</strong> Losses: <strong>{character.losses}</strong>Rating: <strong>{character.rating}</strong></small>
             </div>
           </div>
         </div>
