@@ -216,7 +216,7 @@ app.put('/api/characters', function(req, res, next) {
           else{
              dif = winner.rating - loser.rating;
           }
-          var pow = [Math.pow(10), dif];
+          var pow = Math.pow(10, dif);
           var den = pow/400;
           var ex = 1/(1+den);
           winner.rating = winner.rating + (20*ex);
