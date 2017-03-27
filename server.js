@@ -216,10 +216,11 @@ app.put('/api/characters', function(req, res, next) {
           else{
              dif = winner.rating - loser.rating;
           }
-          var pow = Math.pow(10, dif);
-          var den = pow/400;
-          var ex = 1/(1+den);
-          winner.rating = winner.rating + (20*ex);
+          var det = dif/400;
+          var pow = Math.pow(10, det);
+          var den = pow+1;
+          var ex = 1/den;
+          winner.rating = winner.rating + (2*ex);
           winner.voted = true;
           winner.random = [Math.random(), 0];
           winner.save(function(err) {
