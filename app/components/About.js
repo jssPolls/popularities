@@ -60,6 +60,8 @@ render() {
         <div className='profile-stats clearfix'>
           <ul>
             <li><span className='stats-number'>{this.state.winLossRatio}</span>Winning Percentage</li>
+                         <li><span className='stats-number'>{this.state.rating}</span>Rating</li>
+
             <li><span className='stats-number'>{this.state.wins}</span> Wins</li>
             <li><span className='stats-number'>{this.state.losses}</span> Losses</li>
           </ul>
