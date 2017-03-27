@@ -60,6 +60,8 @@ class Character extends React.Component {
           <h4 className='lead'>Branch: <strong>{this.state.branch}</strong></h4>
           <h4 className='lead'>Gender: <strong>{this.state.gender}</strong></h4>
           <h4 className='lead'>Image URL: <strong>{this.state.url}</strong></h4>
+          <h4 className='lead'>Rating: <strong>{this.state.rating}</strong></h4>
+
 
       
           <button className='btn btn-transparent'
