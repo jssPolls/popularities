@@ -41,8 +41,8 @@ class Footer extends React.Component {
           <div className='row'>
             <div className='col-sm-5'>
               <h3 className='lead'><strong>Voting</strong> and <strong>adding persons</strong></h3>
-              <p><strong>will be ANONYMOUS</strong></p>
-      <p>Nice Try, script kiddies!! :)! Thanks for the cover pics.</p>
+              <p><strong>still is ANONYMOUS</strong></p>
+      <p>Zealicon 2k17</p>
            <p>Follow us on <a href="https://www.facebook.com/jsspolls/">Facebook</a></p>
               
             </div>
