@@ -247,7 +247,7 @@ app.put('/api/characters', function(req, res, next) {
 app.get('/api/characters/shame', function(req, res, next) {
   Character
     .find()
-    .sort('-rating')
+    .sort('-losses')
     .limit(100)
     .exec(function(err, characters) {
       if (err) return next(err);
@@ -269,7 +269,7 @@ app.get('/api/characters/top', function(req, res, next) {
 
   Character
     .find(conditions)
-    .sort('-rating')
+    .sort('-wins')
     .limit(500)
     .exec(function(err, characters) {
       if (err) return next(err);
@@ -499,7 +499,7 @@ app.get('/api/stats', function(req, res, next) {
       function(callback) {
         Character
           .find()
-          .sort('-rating')
+          .sort('-wins')
           .limit(200)
           .select('race')
           .exec(function(err, characters) {
@@ -517,7 +517,7 @@ app.get('/api/stats', function(req, res, next) {
       function(callback) {
         Character
           .find()
-          .sort('-rating')
+          .sort('-wins')
           .limit(100)
           .select('bloodline')
           .exec(function(err, characters) {
