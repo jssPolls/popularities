@@ -41,10 +41,10 @@ class Character extends React.Component {
   }
 
   render() {
-//       const bgImgUrl = "https://raw.githubusercontent.com/kshitj9/votes/master/public/img/amarr_bg.jpg"
-//         const background = {
-//     backgroundImage: 'url(' + bgImgUrl + ')'
-//   }
+      const bgImgUrl = "https://raw.githubusercontent.com/jssPolls/popularities/master/app/components/amarr_bg.jpg"
+        const background = {
+    backgroundImage: 'url(' + bgImgUrl + ')'
+  }
 
     return (
           <div className='container'>
