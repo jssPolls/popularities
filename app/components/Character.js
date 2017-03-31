@@ -47,8 +47,7 @@ class Character extends React.Component {
   }
 
     return (
-          <div className='container'>
-       <div className='profile-img'>
+          <div className='container' style={background}>
         <div className='profile-stats clearfix'>
           <a ref='magnificPopup' className='magnific-popup' href={this.state.url}>
             <img className='media-object' src={this.state.url} style = {{width:200, height: 200}}/>
@@ -77,7 +76,6 @@ class Character extends React.Component {
             <li><span className='stats-number'>{this.state.losses}</span> Losses</li>
           </ul>
         </div>
-</div>
       </div>
     );
   }
