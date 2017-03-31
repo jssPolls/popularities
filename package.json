@@ -1,13 +1,13 @@
 {
-  "name": "newedenfaces",
-  "description": "Character voting app for EVE Online",
+  "name": "Game of Polls",
+  "description": "Voting App",
   "version": "1.0.0",
   "engines": {
     "node": "6.9.4"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sahat/newedenfaces-react"
+    "url": ""
   },
   "main": "server.js",
   "scripts": {
