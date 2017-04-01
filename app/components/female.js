@@ -52,7 +52,7 @@ class female extends React.Component {
 
     return (
       <div className='container'>
-        <h3 className='text-center'>Who do you think should be made ms. Zealicon thois year?</h3>
+        <h3 className='text-center'>Who do you think should be made Ms. Zealicon this year?</h3>
         <div className='row'>
           {characterNodes}
         </div>
