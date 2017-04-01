@@ -52,7 +52,7 @@ class male extends React.Component {
 
     return (
       <div className='container'>
-        <h3 className='text-center'>Who do you think should get maximum number of proposes today?</h3>
+        <h3 className='text-center'>Who do you think should be Mr. Zealicon this year?</h3>
         <div className='row'>
           {characterNodes}
         </div>
